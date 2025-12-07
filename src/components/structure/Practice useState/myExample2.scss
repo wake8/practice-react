@@ -1,0 +1,25 @@
+
+.container {
+    height: 600px;
+    width: 600px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font: 24px;
+
+    input {
+        height: 48px;
+        font: 24px;
+    }
+
+    .color-div {
+        height: 500px;
+        width: 500px;
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

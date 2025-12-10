@@ -11,6 +11,10 @@ import { UseRefPractice } from './components/structure/practice useRef/UseRefPra
 import { UseMemoPractice } from './components/structure/practice UseMemo/useMemoPractice';
 import MemoExampleParent from './components/structure/practice Memo/MemoPractice';
 import UseCallBackPractice from './components/structure/practice useCallback/UseCallBackPractice';
+import { createBrowserRouter, Outlet } from 'react-router'
+import { Menu } from './components/structure/menu/Menu';
+
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +22,11 @@ function App() {
   return (
     <>
       <section className='parent-cont'>
+        App component
+        <Menu></Menu>
+        <section className="menu"></section>
+
+        <Outlet />
         {/* <div>
           <MyExample />
         </div>
@@ -37,10 +46,10 @@ function App() {
         {/* <div>
           <UseMemoPractice />
         </div> */}
-        <div>
-          {/* <MemoExampleParent/> */}
+        {/* <div>
+          // <MemoExampleParent/> 
           <UseCallBackPractice/>
-        </div>
+        </div> */}
       </section>
 
     </>
